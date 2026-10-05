@@ -1,0 +1,40 @@
+/* Firefox Classic Theme tweaks, loaded on top of Lepton Photon-Style.
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* Slightly rounded URL bar and search bar, as before Firefox 157 */
+:root,
+.urlbar,
+#urlbar,
+#searchbar {
+  --urlbar-border-radius: 4px !important;
+  --urlbarview-border-radius: 4px !important;
+  --urlbar-inner-border-radius: 3px !important;
+  --urlbar-background-border-radius: 4px !important;
+  --urlbar-background-border-top-radius-open: 4px !important;
+}
+
+/* Keep the URL bar and search bar inside the toolbar while typing */
+:root,
+.urlbar,
+#urlbar,
+#searchbar {
+  --urlbar-background-overhang-open: 0px !important;
+  --urlbar-input-growth-open-inline: 0px !important;
+  --urlbar-input-growth-open-block: 0px !important;
+  --urlbarView-joint-background-outset-inline: var(--urlbarView-margin-inline, 0px) !important;
+  --urlbarView-joint-background-outset-block: var(--urlbarView-margin-block, 0px) !important;
+}
+
+/* Blue line on hovered tabs, same as the selected tab */
+.tabbrowser-tab:hover:not([selected="true"], [multiselected]) > .tab-stack > .tab-background > .tab-context-line,
+#TabsToolbar[brighttext] .tabbrowser-tab:hover:not([selected="true"], [multiselected]) > .tab-stack > .tab-background > .tab-context-line {
+  background-color: var(--tab-line-color, var(--lwt-tab-line-color, rgb(10, 132, 255))) !important;
+}
+
+/* Square tab close button */
+.tab-close-button {
+  border-radius: 0 !important;
+}

@@ -1,0 +1,9 @@
+/** Lepton Photon-Style (Chrome) **********************************************/
+@import url("css/leptonChrome.css");
+
+/** Firefox Classic Theme tweaks **********************************************/
+@import url("classic.css");
+
+/** Your own styles: put them in userChrome-overrides.css, the installer keeps
+    that file across updates. A missing file is simply ignored. ***************/
+@import url("userChrome-overrides.css");
