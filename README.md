@@ -18,6 +18,12 @@ All the fixes live in [`chrome/classic.css`](chrome/classic.css). Everything
 else under `chrome/css`, `chrome/icons` and `user.js` comes from Lepton
 [`LEPTON_VERSION`](LEPTON_VERSION).
 
+## Theme
+
+Use either: https://addons.mozilla.org/en-US/firefox/addon/adapta-light-foreground/
+
+Or: https://addons.mozilla.org/fr/firefox/addon/arc-darker-theme/
+
 ## Install
 
 Close Firefox first, or restart it after installing.
